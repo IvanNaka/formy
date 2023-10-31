@@ -34,38 +34,8 @@
         </div>
     </form>
     
-    <?php
-        if(isset($_POST['cadastro'])) {
-            $name = mysqli_real_escape_string($connection, $_POST['nome']);
-            $cpf = mysqli_real_escape_string($connection, $_POST['cpf']);
-            $email = mysqli_real_escape_string($connection, $_POST['email']);
-            $senha = mysqli_real_escape_string($connection, $_POST['senha']);
+    <?php include "functions.php";?>
 
-            $sql = "INSERT INTO user (nome, cpf, email, senha) VALUES ('$name','$cpf','$email','$senha')";
-
-            if(mysqli_query($connection, $sql)) {
-                echo 'Success!';
-            } else {
-                echo 'Error! Could not able to execute $sql' . mysqli_error($connection);
-            }
-        }
-
-        mysqli_close($connection);
-    ?>
-
-    <script>
-        function maskCPF(input){
-            let cpf = input.value
-            
-            if(isNaN(cpf[cpf.length - 1])){ // impede entrar outro caractere que não seja número
-            input.value = cpf.substring(0, cpf.length-1)
-            return
-            }
-            
-            input.setAttribute("maxlength", "14")
-            if (cpf.length == 3 || cpf.length == 7) input.value += "."
-            if (cpf.length == 11) input.value += "-"
-        }
-    </script>
+    <script>include 'scripts.js'</script>
 </body>
 </html>
