@@ -18,10 +18,6 @@
                 <span>Nome:</span>
                 <input type="text" name="nome" id="nome">
             </div>
-            <div class="cpf">
-                <span>CPF:</span>
-                <input type="text" name="cpf" id="cpf" oninput="maskCPF(this)">
-            </div>
             <div class="email">
                 <span>Email:</span>
                 <input type="text" name="email" id="email">
@@ -36,6 +32,6 @@
     
     <?php include "functions.php";?>
 
-    <script>include 'scripts.js'</script>
+    <script src="scripts.js"></script>
 </body>
 </html>
