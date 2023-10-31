@@ -10,7 +10,8 @@
     <title>Formulário</title>
 </head>
 <body>
-    <h1>Formulário de Cadastro</h1>
+    <h1>Já possui algum cadastro?</h1>
+    <h1>Faça login</h1>
     <form action="index.php" method="post" name="cadastro">
         <div class="form">
             <div class="nome">
