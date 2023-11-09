@@ -1,14 +1,25 @@
-    <?php
-        if(isset($_POST['cadastro'])) {
-            $name = mysqli_real_escape_string($connection, $_POST['nome']);
-            $email = mysqli_real_escape_string($connecnection, $tion, $_POST['email']);
-            $senha = mysqli_real_escape_string($con_POST['senha']);
-            $sql = "INSERT INTO tbusuario (nome, email, senha) VALUES ('$name','$email','$senha')";
-            if(mysqli_query($connection, $sql)) {
-                echo 'Success!';
-            } else {
-                echo 'Error! Could not able to execute $sql' . mysqli_error($connection);
-            }
-        }
-        mysqli_close($connection);
-    ?>
+<?php 
+include_once 'connection.php';
+?>
+
+<?php 
+function getUserId($nome, $email, $senha, $connection){
+    $sql = "SELECT id_usuario
+     FROM tbusuario 
+     WHERE nome= '$nome'
+     AND email = '$email'
+     AND senha= '$senha'
+;";
+    if (isset($connection)){
+    $result = mysqli_query($connection, $sql);
+    $resultCheck = mysqli_num_rows($result);
+    if($resultCheck > 0) {
+        $row = mysqli_fetch_assoc($result);
+        return $row['id_usuario'];
+    } else {
+        return NULL;    
+    };} else {
+        return NULL;
+    }
+}
+?>

@@ -34,10 +34,6 @@
             <input type="submit" value="Enviar" name="cadastro"> 
         </div>
     </form>
-    <p href= "cadastro.php"> AAA</p>
-    <a href="cadastro.php">
-            <button>Faça o cadastro</button>
-    </a>
     <script src="scripts.js"></script>
 </body>
 </html>
