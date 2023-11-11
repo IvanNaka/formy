@@ -11,7 +11,6 @@ include 'functions.php';
         FROM tbusuario 
         WHERE email = '$email'
         AND senha= '$senha';";
-        echo $sql;
         if(mysqli_query($connection, $sql)) {
             $result = mysqli_query($connection, $sql);
             $resultCheck = mysqli_num_rows($result);
@@ -22,7 +21,7 @@ include 'functions.php';
                 $_SESSION['id'] = $id;
                 header("Location: home.php?usuario=$id");
             } else {
-                echo 'Erro ao realizar login! Verifique os dados inseridos';    
+                echo 'Erro ao realizar login! Verifique os dados inseridos.';    
             }
         } else {
             echo 'Erro ao realizar login!' . mysqli_error($connection);
