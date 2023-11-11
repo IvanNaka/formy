@@ -10,9 +10,10 @@
     <title>Usuários</title>
 </head>
 <body>
-    <h1>Usuários do Sistema</h1>
-    <?php if (isset($_SESSION['id'])){
-        echo 'SESSAO';
-    };?>
+    <h1>Formulários</h1>
+    <?php 
+    session_start();
+    $_SESSION['id'] = $_GET['usuario'];
+    ?>
 </body>
 </html>
