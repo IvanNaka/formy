@@ -21,10 +21,14 @@ include 'functions.php';
                 $_SESSION['id'] = $id;
                 header("Location: home.php?usuario=$id");
             } else {
-                echo 'Erro ao realizar login! Verifique os dados inseridos.';    
+                echo '<script type="text/javascript">
+                    alert("Erro ao realizar login! Por favor verifique os dados inseridos");
+                </script>';
             }
         } else {
-            echo 'Erro ao realizar login!' . mysqli_error($connection);
+            echo '<script type="text/javascript">
+            alert("Erro ao realizar login!");
+            </script>';
         };
     }
 ?>
