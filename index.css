@@ -1,0 +1,32 @@
+.body{
+    background: orange;
+    display: flexbox;
+    width: 100vw;
+    height: 70vw;
+    text-align: center;
+}
+.faca-login{
+    margin-top: 50%;
+    margin-left: 300px;
+    display: flexbox;
+    text-align: left; 
+}
+.login{
+    margin-left: 250px;
+    display: flexbox;
+    text-align: left;
+    
+}
+.form-group{
+    margin-left: 250px;
+    display: flexbox;
+    text-align: left;
+}
+
+.button {
+    margin-left: 250px;
+    display: flexbox;
+    text-align: left; 
+}
+
+.confirmar

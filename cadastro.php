@@ -9,10 +9,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-</head>
+    <link rel="stylesheet" href="./cadastro.css">
+    </head>
 <body>
-    <h1>Já possui algum cadastro?</h1>
-    <h1>Faça logins</h1>
+    <h1>Cadastro</h1>
     <form action="script_cadastro.php" method="post" >
         <div class="form">
             <div class="nome">
