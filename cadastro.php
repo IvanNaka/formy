@@ -1,6 +1,6 @@
 <?php
     include_once 'connection.php';
-    include "script_cadastrologin.php";
+    include "script_cadastro.php";
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
 <body>
     <h1>Já possui algum cadastro?</h1>
     <h1>Faça logins</h1>
-    <form action="script_cadastrologin.php" method="post" >
+    <form action="script_cadastro.php" method="post" >
         <div class="form">
             <div class="nome">
                 <span>Nome:</span>

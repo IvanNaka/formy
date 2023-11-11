@@ -11,8 +11,6 @@ include 'functions.php';
         $senha = mysqli_real_escape_string($connection, $_POST['senha']);
         $sql = "INSERT INTO tbusuario (nome, email, cpf, senha) VALUES ('$nome','$email', '$cpf','$senha')";
         if(mysqli_query($connection, $sql)) {
-            if (isset($connection)){echo 'Continua conectado';};
-            echo 'Conta criada com sucesso!';
             $id =  getUserId($nome,$email, $senha, $connection);
             session_start();
             $_SESSION['id'] = $id;
