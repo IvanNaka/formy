@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper{
+    background-color:  #FED057;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.container-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#3FA6B4;
+    padding: 3em;
+    border-radius: 20px;
+}
+
+img{
+    width: 200px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+form .opt{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+form .email{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-bottom: 1em;
+}
+
+form .senha{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-bottom: 1em;
+}
