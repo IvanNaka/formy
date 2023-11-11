@@ -36,8 +36,6 @@ values (4, 'Universidade Positivo');
 insert into TBInstituicaoEns (id_ie, nome_desc)
 values (5, 'Universidade Tuiuti');
 
-drop table tbusuario;
-
 create table TBUsuario
 (
     id_usuario  int(6) auto_increment primary key,

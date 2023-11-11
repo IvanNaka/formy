@@ -12,28 +12,37 @@
     <link rel="stylesheet" href="./cadastro.css">
     </head>
 <body>
-    <h1>Cadastro</h1>
-    <form action="script_cadastro.php" method="post" >
-        <div class="form">
-            <div class="nome">
-                <span>Nome:</span>
-                <input type="text" name="nome" id="nome">
+    <div class="page-wrapper">
+            <div class="container-login">
+                <h1>Cadastro</h1>
+                <form action="script_cadastro.php" method="post" >
+                    <div class="form">
+                        <div class="Nome">
+                            <span>Nome Completo:</span>
+                            <input type="text" name="Nome" id="Nome">
+                        </div>
+                        <div class="cpf">
+                            <span>CPF:</span>
+                            <input type="text" name="cpf" id="cpf" >
+                        </div>
+                        <div class="email">
+                            <span>E-mail:</span>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="senha">
+                            <span>Senha:</span>
+                            <input type="password" name="senha" id="senha">
+                        </div>
+                        <div class="Senha">
+                            <span>Confirme a Senha:</span>
+                            <input type="password" name="senha" id="senha">
+                        </div>
+                    </div>
+                    <input type="submit" value="Cadastrar" name="cadastro"> 
+                </div>
+                </form>
+                <script src="scripts.js"></script>
             </div>
-            <div class="email">
-                <span>Email:</span>
-                <input type="text" name="email" id="email">
-            </div>
-            <div class="cpf">
-                <span>CPF:</span>
-                <input type="text" name="cpf" id="cpf" >
-            </div>
-            <div class="senha">
-                <span>Senha:</span>
-                <input type="password" name="senha" id="senha">
-            </div>
-            <input type="submit" value="Enviar" name="cadastro"> 
         </div>
-    </form>
-    <script src="scripts.js"></script>
 </body>
 </html>
