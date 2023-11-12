@@ -10,6 +10,20 @@
     <title>Usuários</title>
 </head>
 <body>
+<header>
+            <div class="container">
+                <img src="./logo_formy.jpeg" class="logo">
+                <div class="right">
+                    <ul>
+                        <a href="login.php"><li>Login</li></a>
+                        <a href="cadastro.php"><li>Cadastro</li></a>
+                        <li>Sobre nós</li>
+                        <li>Contato</li>
+                        <li>Suporte</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
     <?php 
     session_start();
     $_SESSION['id'] = $_GET['usuario'];

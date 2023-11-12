@@ -22,7 +22,7 @@ include_once 'connection.php';
                         echo '----------------------<br>';
                         echo $imagem;
                         echo '<b>Nome:</b> ' .$row['nome'] .'<br>';
-                        echo '<input type="hidden" id="id_formulario" name="id_formulario" value="'.$row['id_formulario']. '">'
+                        echo '<input type="hidden" id="id_formulario" name="id_formulario" value="'.$row['id_formulario']. '">';
                         echo '<b>Data de criação:</b> ' .$row['dat_criacao'] .'<br>';
                         echo '<form action="script_delete.php" method="post" >    
                             <div class="form">
