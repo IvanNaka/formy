@@ -51,6 +51,34 @@ create table TBUsuario
     id_ie       int(6) references TBInstituicaoEns
 );
 
+create table TBCatQuestionario
+(
+    id_cat    int(6) primary key,
+    nome_desc varchar(30)  not null,
+    descricao varchar(200) not null
+);
+
+insert into TBCatQuestionario (id_cat, nome_desc, descricao)
+values (1, 'Matemática', 'Questionário de questões sobre matemática');
+insert into TBCatQuestionario (id_cat, nome_desc, descricao)
+values (2, 'História', 'Questionário de questões sobre matemática');
+insert into TBCatQuestionario (id_cat, nome_desc, descricao)
+values (3, 'Geografia', 'Questionário de questões sobre matemática');
+insert into TBCatQuestionario (id_cat, nome_desc, descricao)
+values (4, 'Química', 'Questionário de questões sobre matemática');
+insert into TBCatQuestionario (id_cat, nome_desc, descricao)
+values (5, 'Física', 'Questionário de questões sobre matemática');
+
+create table TBFormulario
+(
+    id_formulario int(6) auto_increment primary key,
+    nome          varchar(100)  not null,
+    imagem        varchar(100) null,
+    dat_criacao   date          not null,
+    pontuacao_max decimal(4, 2) not null,
+    id_categoria  varchar(6) references TBCatQuestionario,
+    id_usuario    int(6) references TBUsuario
+);
 
 
 

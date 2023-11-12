@@ -1,6 +1,6 @@
 <?php
     include_once 'connection.php';
-    include "script_login.php";
+    include "script_resetsenha.php";
 ?>
 
 <!DOCTYPE html>
@@ -16,29 +16,17 @@
             <img src="./logo_formy.jpeg">
             <div class="container-login">
                 <h1>Login</h1>
-                <form action="script_login.php" method="post" >
+                <form action="script_resetsenha.php" method="post" >
                     <div class="form">
                         <div class="email">
                             <span>E-mail:</span>
                             <input type="email" name="email" id="email">
                         </div>
                         <div class="senha">
-                            <span>Senha:</span>
+                            <span>Nova Senha:</span>
                             <input type="password" name="senha" id="senha">
                         </div>
-                        <div class="opt">
-                            <p>Esqueceu sua senha?</p>
-                            <a href="resetsenha.php">
-                                Redefinir sua senha
-                            </a>
-                        </div>
-                        <div class="opt">
-                            <p>Não possui uma conta?</p>
-                            <a href="cadastro.php">
-                                Faça o cadastro
-                            </a>
-                        </div>
-                        <input type="submit" value="Entrar" name="login"> 
+                        <input type="submit" value="Redefinir senha" name="resetsenha"> 
                     </div>
                 </form>
             </div>

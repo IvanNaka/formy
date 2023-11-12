@@ -33,10 +33,6 @@
                             <span>Senha:</span>
                             <input type="password" name="senha" id="senha">
                         </div>
-                        <div class="Senha">
-                            <span>Confirme a Senha:</span>
-                            <input type="password" name="senha" id="senha">
-                        </div>
                     </div>
                     <input type="submit" value="Cadastrar" name="cadastro"> 
                 </div>
