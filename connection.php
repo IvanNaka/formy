@@ -1,8 +1,8 @@
 <?php
     $dbServerName = 'localhost';
-    $dbUserName = 'root';
-    $dbPassword = 'root';
-    $dbName = 'projeto_formy';
+    $dbUserName = 'username';
+    $dbPassword = 'password';
+    $dbName = 'projeto_web';
     $connection = new mysqli($dbServerName, $dbUserName, $dbPassword, $dbName);
     if($connection->connect_error) {
         echo "$connection->connect_error";
