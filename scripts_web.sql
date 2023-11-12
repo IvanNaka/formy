@@ -75,8 +75,6 @@ create table TBFormulario
     nome          varchar(100)  not null,
     imagem        varchar(100) null,
     dat_criacao   date          not null,
-    pontuacao_max decimal(4, 2) not null,
-    id_categoria  varchar(6) references TBCatQuestionario,
     id_usuario    int(6) references TBUsuario
 );
 
