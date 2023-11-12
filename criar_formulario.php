@@ -20,5 +20,31 @@
     echo "<a href=$redirect>";
     echo '<button>Criar Formulário</button> </a>';
     ?>
+    <div class="page-wrapper">
+            <div class="container-login">
+                <form action="script_cadastroform.php" method="post" >
+                    <div class="form">
+                        <div class="titulo">
+                            <span>Titulo do formulário:</span>
+                            <input type="text" name="titulo" id="titulo" required>
+                        </div>
+                        <div class="cpf">
+                            <span>Digite aqui sua pergunta:</span>
+                            <input type="text" name="pergunta" id="pergunta" required >
+                        </div>
+                        <div class="cpf">
+                            <span>Digite aqui a resposta:</span>
+                            <input type="text" name="resposta" id="resposta" required >
+                        </div>
+                        <?php 
+                        echo    "<input type='hidden' id='usuario' name='usuario' value='$id'>";
+                        ?>
+                    </div>
+                    <input type="submit" value="Concluir Formulário" name="salvar_form"> 
+                </div>
+                </form>
+                <script src="scripts.js"></script>
+            </div>
+        </div>
 </body>
 </html>
