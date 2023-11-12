@@ -8,30 +8,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuários</title>
+    <link rel="stylesheet" href="home_forms.css">
 </head>
 <body>
-<header>
-            <div class="container">
-                <img src="./logo_formy.jpeg" class="logo">
-                <div class="right">
-                    <ul>
-                        <a href="login.php"><li>Login</li></a>
-                        <a href="cadastro.php"><li>Cadastro</li></a>
-                        <li>Sobre nós</li>
-                        <li>Contato</li>
-                        <li>Suporte</li>
-                    </ul>
-                </div>
+    <header>
+        <div class="container">
+            <img src="./logo_formy.jpeg" class="logo">
+            <center><div 
+             style="width: 100%; height: 100%; padding: 12px; background: #DBEAFE; border-radius: 21px; border: 1px #1D4ED8 solid; justify-content: flex-start; align-items: center; gap: 8px; display: inline-flex">
+            <div  style="width: 18px; height: 18px; position: relative">
+            <div  style="width: 12.44px; height: 12.44px; left: 2px; top: 2px; position: absolute; border: 1px #1D4ED8 solid"></div>
+            <div  style="width: 3.38px; height: 3.38px; left: 12.62px; top: 12.62px; position: absolute; border: 1px #1D4ED8 solid"></div>
             </div>
-        </header>
+            <div  style="flex: 1 1 0; color: #2563EB; font-size: 24px; font-family: Work Sans; font-weight: 400; line-height: 16px; word-wrap: break-word">Pesquisar</div>
+            </div></center>
+                    <div class="right">
+                        <ul>
+                            
+                            <li>Explorar</li>
+                            <li>Criar Formulario</li>
+                            <li>Sobre nós</li>
+                            <li>Contato</li>
+                            <li>Suporte</li>
+                        </ul>
+                    </div>
+        </div>
+    </header>
+
+    <div class="materias">Matemática</div>
+    <div class="materias">Português</div>
+    <div class="materias">Física</div>
+    <div class="materias">Química</div>
+    <div class="materias">Geografia</div>
+    <div class="materias">História</div>
+    <div class="materias">Sociologia</div>
+    <div class="materias">Filosofia</div>
+    <div class="materias">Favoritos</div>
+
     <?php 
     session_start();
     $_SESSION['id'] = $_GET['usuario'];
     $id = $_GET['usuario'];
     $redirect = "criar_formulario.php?usuario=$id";
-    echo '<h1>Formulários</h1>';
+    echo '<div class=formularios><h1>Formulários</h1></div>';
     echo "<a href=$redirect>";
-    echo '<button>Criar Formulário</button> </a>';
+    echo '<div class="php"><button>Criar Formulário</button></div> </a>';
     ?>
     <?php
         $userId = mysqli_real_escape_string($connection, $_GET['usuario']);
@@ -49,11 +70,11 @@
                         }else{
                             $imagem = '<img src="./logo_formy.jpeg">';
                         }
-                        echo '----------------------<br>';
-                        echo $imagem;
+                        echo '<dic class="php">----------------------<br></div>';
+                        echo $imagem.'<br>';
                         echo '<b>Nome:</b> ' .$row['nome'] .'<br>';
                         echo '<b>Data de criação:</b> ' .$row['dat_criacao'] .'<br>';
-                        echo '<form action="script_delete.php" method="post" >';    
+                        echo 'form action="script_delete.php" method="post" >';    
                         echo        '<div class="form">';
                         echo            '<input type="hidden" id="id_formulario" name="id_formulario" value="'.$row['id_formulario']. '">';
                         echo            "<input type='hidden' id='usuario' name='usuario' value='$userId'>";

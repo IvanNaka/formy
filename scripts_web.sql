@@ -51,6 +51,8 @@ create table TBUsuario
     id_ie       int(6) references TBInstituicaoEns
 );
 
+/*insert into TBUsuario values (2, '1234', 'gabriel.2317@hotmail.com', 'Gabriel Oleriano Candido', '09895749970', null, null, False,
+True, 1, 1);*/
 create table TBCatQuestionario
 (
     id_cat    int(6) primary key,
@@ -78,5 +80,6 @@ create table TBFormulario
     id_usuario    int(6) references TBUsuario
 );
 
-
+/*insert into TBFormulario values (1, 'Cálculo Integral', './Cálculo integral.jpg', '2023-11-12', 1);
+insert into TBFormulario values (2, 'História do Brasil', './historia.jpg', '2023-08-15', 2);*/
 
