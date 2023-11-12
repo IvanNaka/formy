@@ -28,11 +28,11 @@
                             <span>Titulo do formulário:</span>
                             <input type="text" name="titulo" id="titulo" required>
                         </div>
-                        <div class="cpf">
+                        <div class="pergunta">
                             <span>Digite aqui sua pergunta:</span>
                             <input type="text" name="pergunta" id="pergunta" required >
                         </div>
-                        <div class="cpf">
+                        <div class="resposta">
                             <span>Digite aqui a resposta:</span>
                             <input type="text" name="resposta" id="resposta" required >
                         </div>
