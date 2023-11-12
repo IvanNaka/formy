@@ -20,11 +20,11 @@
                     <div class="form">
                         <div class="email">
                             <span>E-mail:</span>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="senha">
                             <span>Senha:</span>
-                            <input type="password" name="senha" id="senha">
+                            <input type="password" name="senha" id="senha" required>
                         </div>
                         <div class="opt">
                             <p>Esqueceu sua senha?</p>

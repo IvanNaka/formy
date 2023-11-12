@@ -19,22 +19,22 @@
                     <div class="form">
                         <div class="Nome">
                             <span>Nome Completo:</span>
-                            <input type="text" name="Nome" id="Nome">
+                            <input type="text" name="Nome" id="Nome" required>
                         </div>
                         <div class="cpf">
                             <span>CPF:</span>
-                            <input type="text" name="cpf" id="cpf" >
+                            <input type="text" name="cpf" id="cpf" required >
                         </div>
                         <div class="email">
                             <span>E-mail:</span>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="senha">
                             <span>Senha:</span>
-                            <input type="password" name="senha" id="senha">
+                            <input type="password" name="senha" id="senha" required>
                         </div>
                     </div>
-                    <input type="submit" value="Cadastrar" name="cadastro"> 
+                    <input type="submit" value="Cadastrar" name="cadastro" required> 
                 </div>
                 </form>
                 <script src="scripts.js"></script>
