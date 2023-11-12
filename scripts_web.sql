@@ -14,7 +14,6 @@ create table TBUsuario
     is_aluno    boolean     default TRUE,
 );
 
-<<<<<<< HEAD
 /*insert into TBUsuario values (2, '1234', 'gabriel.2317@hotmail.com', 'Gabriel Oleriano Candido', '09895749970', null, null, False,
 True, 1, 1);*/
 create table TBCatQuestionario
@@ -35,8 +34,6 @@ values (4, 'Química', 'Questionário de questões sobre matemática');
 insert into TBCatQuestionario (id_cat, nome_desc, descricao)
 values (5, 'Física', 'Questionário de questões sobre matemática');
 
-=======
->>>>>>> 0c4e7f8faad9253753dcda57dcf3b844bed078d7
 create table TBFormulario
 (
     id_formulario int(6) auto_increment primary key,
@@ -48,9 +45,6 @@ create table TBFormulario
     id_usuario    int(6) references TBUsuario
 );
 
-<<<<<<< HEAD
 /*insert into TBFormulario values (1, 'Cálculo Integral', './Cálculo integral.jpg', '2023-11-12', 1);
 insert into TBFormulario values (2, 'História do Brasil', './historia.jpg', '2023-08-15', 2);*/
-=======
->>>>>>> 0c4e7f8faad9253753dcda57dcf3b844bed078d7
 
