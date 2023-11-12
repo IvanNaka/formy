@@ -10,7 +10,6 @@ include 'functions.php';
         $sql = "UPDATE tbusuario 
         SET senha = '$senha'
         WHERE email = '$email';";
-        echo $sql;
         if(mysqli_query($connection, $sql)) {
             $result = mysqli_query($connection, $sql);
             header("Location: login.php");
