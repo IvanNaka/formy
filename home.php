@@ -25,17 +25,22 @@
             </div></center>
                     <div class="right">
                         <ul>
-                            <li>Explorar</li>
-                            <li> 
-                                <?php	
-                                    $id = $_GET['usuario'];
-                                    $redirect = "criar_formulario.php?usuario=$id";
-                                    echo "<a href=$redirect>Criar Formulario</a>";
-                                ?>
-                            </li>
-                            <li><a href="index.html?usuario=2&formulario=1">Sobre nós</a></li>
-                            <li>Contato</li>
-                            <li>Suporte</li>
+                        <?php	
+                            $id = $_GET['usuario'];
+                            $redirect = "home.php?usuario=$id";
+                            echo "
+                            <li>
+                                <a href=$redirect>Home</a>
+                            </li>";
+                            ?>
+                        <li> 
+                            <?php	
+                                $id = $_GET['usuario'];
+                                $redirect = "criar_formulario.php?usuario=$id";
+                                echo "<a href=$redirect>Criar Formulario</a>";
+                            ?>
+                        </li>
+
                         </ul>
                     </div>
             </div>
@@ -71,7 +76,7 @@
                             }
                             echo '<div class="forms">';
                             echo $imagem.'<br>';
-                            echo '<b>Nome:</b> ' .$row['nome'] .'<br>';
+                            echo '<b>Nome:</b><a href=formulario.php?formulario='.$row['id_formulario'].'&usuario='.$userId.'>' .$row['nome'] .'</a><br>';
                             echo '<b>Data de criação:</b> ' .$row['dat_criacao'] .'<br>';
                             echo '<form action="script_delete.php" method="post" >';    
                             echo        '<div class="form">';

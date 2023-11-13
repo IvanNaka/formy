@@ -1,7 +1,7 @@
 <?php
     $dbServerName = 'localhost';
-    $dbUserName = 'username';
-    $dbPassword = 'password';
+    $dbUserName = 'root';
+    $dbPassword = '';
     $dbName = 'projeto_web';
     $connection = new mysqli($dbServerName, $dbUserName, $dbPassword, $dbName);
     if($connection->connect_error) {

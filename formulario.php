@@ -16,12 +16,22 @@
             <img src="./logo_formy.jpeg" class="logo">
                     <div class="right">
                         <ul>
-                            
-                            <li><a href="home.php?usuario=2&formulario=1">Explorar</a></li>
-                            <li><a href="criar_formulario.php?usuario=2&formulario=1">Criar Formulario</a></li>
-                            <li><a href="index.html?usuario=2&formulario=1">Sobre nós</a></li>
-                            <li>Contato</li>
-                            <li>Suporte</li>
+                        <?php	
+                            $id = $_GET['usuario'];
+                            $redirect = "home.php?usuario=$id";
+                            echo "
+                            <li>
+                                <a href=$redirect>Home</a>
+                            </li>";
+                            ?>
+                            <?php	
+                            $id = $_GET['usuario'];
+                            $redirect = "criar_formulario.php?usuario=$id";
+                            echo "
+                            <li>
+                                <a href=$redirect>Criar Formulario</a>
+                            </li>";
+                            ?>
                         </ul>
                     </div>
         </div>

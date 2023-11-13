@@ -20,11 +20,22 @@
                 
                 <div class="right">
                     <ul>
-                        
-                        
-                        <li><a href="home.php?usuario=2&formulario=1">Explorar</a></li>
-                        <li>Criar formulario</li>
-                        
+                    <?php	
+                            $id = $_GET['usuario'];
+                            $redirect = "home.php?usuario=$id";
+                            echo "
+                            <li>
+                                <a href=$redirect>Home</a>
+                            </li>";
+                            ?>
+                            <?php	
+                            $id = $_GET['usuario'];
+                            $redirect = "criar_formulario.php?usuario=$id";
+                            echo "
+                            <li>
+                                <a href=$redirect>Criar Formulario</a>
+                            </li>";
+                            ?>
                     </ul>
                 </div>
             </div>
@@ -48,22 +59,16 @@
                                 <span>Digite aqui a resposta:</span>
                                 <input type="text" name="resposta" id="resposta" required >
                             </div>
+                            <?php 
+                            $id = $_GET['usuario'];
+                            echo    "<input type='hidden' id='usuario' name='usuario' value='$id'>";
+                            ?>
                            
                         </div>
                         <div class="botao">
-                        <?php 
-                            session_start();
-                            $_SESSION['id'] = $_GET['usuario'];
-                            $id = $_GET['usuario'];
-                            $redirect = "criar_formulario.php?usuario=$id";
-                            echo '';
-                            echo "<a href=$redirect>";
-                            echo '<button><input type="submit" value="Publicar formulario"
-                             name="salvar_form" id="publicar-formulario">
-                            </button> </a>';
-                        ?>
-                        <input type="submit" value="Excluir pergunta" name="salvar_form" id="Excluir-pergunta">
-                        
+                            <button>
+                                <input type="submit" value="Publicar formulario" name="salvar_form" id="publicar-formulario">
+                            </button>
                     </div>
                     </div>
                     </form>
