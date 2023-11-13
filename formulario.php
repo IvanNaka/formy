@@ -32,6 +32,9 @@
                                 <a href=$redirect>Criar Formulario</a>
                             </li>";
                             ?>
+                            <li>
+                                <a href='index.html'> Logout </a>
+                            </li>
                         </ul>
                     </div>
         </div>
