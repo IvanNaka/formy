@@ -51,8 +51,8 @@
                 }else{
                     $imagem = NULL;
                 };
-                echo '<b>Nome:</b> ' .$row['nome'] .'<br>';
-                echo '<b>Pergunta:</b> ' .$row['pergunta'] .'<br>';
+                echo '<div class="form"><b>Nome:</b> ' .$row['nome'] .'<br></div>';
+                echo '<div class="form"><b>Pergunta:</b> ' .$row['pergunta'] .'<br></div>';
                 echo $imagem;
                 echo '<form method="post" >';    
                 echo        '<div class="form">';
@@ -91,5 +91,30 @@
             } 
         }
     ?>
+
+<button type="button" onclick="changeSizeByBtn(15)" name="btn1" style="position: fixed;
+    top: 50px; left: 83px;">
+            -A
+        </button>
+
+        <button type="button" onclick="changeSizeByBtn(20)" name="btn2" style="position: fixed;
+    top: 50px; left: 100px;">
+            A
+        </button>
+
+        <button type="button" onclick="changeSizeByBtn(25)" name="btn3" style="position: fixed;
+    top: 50px; left: 112px;">
+            A+
+        </button>
+        <br /><br />
+    <script>
+        var cont = document.getElementById("container");
+        
+        function changeSizeByBtn(size) {
+        
+            // Set value of the parameter as fontSize
+            cont.style.fontSize = size;
+        }
+    </script>
 </body>
 </html>

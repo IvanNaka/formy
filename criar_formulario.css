@@ -31,7 +31,7 @@
     display: flex;
     justify-content: space-around;
     margin-top: 2em;
-    font-size: 250%;
+    font-size: 30px;
 }
 
 .content .main-image{
@@ -51,27 +51,52 @@
 }
 
 .subtext{
-    font-weight: 500;
+    font-weight: 400;
 }
 
-.form{
-    position: relative;
-    left: 50px;
-    align-items: center;
+#titulo{
+    background-color: #41A6AD;
+    height: 60px;
+
+}
+#pergunta{
+    background-color:#41A6AD;
+    height: 60px;
 
 }
 
-.btn1{
-    position: fixed;
-    bottom: 50px;
+#resposta{
+    background-color:#41A6AD;
+    height: 60px;
 }
 
-.btn2{
-    position: fixed;
-    bottom: 50px;
+.titulo{
+    display: flex;
+    flex-direction: column;
+
 }
 
-.btn3{
-    position: fixed;
-    bottom: 50px;
+.pergunta{
+    display: flex;
+    flex-direction: column;
+}
+
+.resposta{
+ display: flex;
+ flex-direction: column;
+}
+
+.botao{
+    margin-top: 1em;
+}
+
+
+#Excluir-pergunta{
+    background-color:#FF0000;
+    height: 45px;
+}
+
+#publicar-formulario{
+    background-color:#00D916;
+    height: 45px;
 }
