@@ -23,8 +23,9 @@
                         </div>
                         <div class="cpf">
                             <span>CPF:</span>
-                            <input type="text" name="cpf" id="cpf" required >
-                        </div>
+                            <input type="text" name="cpf" id="cpf" oninput="maskCPF(this)">
+                         </div>
+                            <form name="cadastro">
                         <div class="email">
                             <span>E-mail:</span>
                             <input type="email" name="email" id="email" required>
@@ -37,8 +38,10 @@
                     <input type="submit" value="Cadastrar" name="cadastro" required> 
                 </div>
                 </form>
-                <script src="scripts.js"></script>
+                <script src="Verificar_CPF.js"></script>
             </div>
         </div>
+        <script src="Verificar_CPF.js"></script>
+
 </body>
 </html>

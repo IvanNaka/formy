@@ -7,23 +7,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Usuários</title>
+    <title>Responder Formulário</title>
+    <link rel="stylesheet" href="formulario.css">
 </head>
 <body>
 <header>
-            <div class="container">
-                <img src="./logo_formy.jpeg" class="logo">
-                <div class="right">
-                    <ul>
-                        <a href="login.php"><li>Login</li></a>
-                        <a href="cadastro.php"><li>Cadastro</li></a>
-                        <li>Sobre nós</li>
-                        <li>Contato</li>
-                        <li>Suporte</li>
-                    </ul>
-                </div>
-            </div>
-        </header>
+        <div class="container">
+            <img src="./logo_formy.jpeg" class="logo">
+                    <div class="right">
+                        <ul>
+                            
+                            <li><a href="home.php?usuario=2&formulario=1">Explorar</a></li>
+                            <li><a href="criar_formulario.php?usuario=2&formulario=1">Criar Formulario</a></li>
+                            <li><a href="index.html?usuario=2&formulario=1">Sobre nós</a></li>
+                            <li>Contato</li>
+                            <li>Suporte</li>
+                        </ul>
+                    </div>
+        </div>
+    </header>
     <?php 
     session_start();
     $_SESSION['id'] = $_GET['usuario'];

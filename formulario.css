@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #FED057;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .logo{
+    width: 80px;
+}
+
+.container .right ul{
+    display: flex;
+
+}
+
+.container .right ul li{
+    list-style: none;
+    margin-right: 2em;
+    font-size: 25px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    font-size: 250%;
+}
+
+.content .main-image{
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.content .left{
+    max-width: 500px;
+}
+
+
+.descricao{
+    margin-top: 50px ;
+    
+}
+
+.subtext{
+    font-weight: 500;
+}
