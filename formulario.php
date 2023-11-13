@@ -31,9 +31,9 @@
     $_SESSION['id'] = $_GET['usuario'];
     $id = $_GET['usuario'];
     $redirect = "criar_formulario.php?usuario=$id";
-    echo '<h1>Formulários</h1>';
-    echo "<a href=$redirect>";
-    echo '<button>Criar Formulário</button> </a>';
+    echo ''/*<h1>Formulários</h1>'*/;
+    echo ''/*"<a href=$redirect>"*/;
+    echo ''/*<button>Criar Formulário</button> </a>'*/;
     ?>
     <?php
         $id_formulario = mysqli_real_escape_string($connection, $_GET['formulario']);
@@ -53,7 +53,7 @@
                 };
                 echo '<div class="form"><b>Nome:</b> ' .$row['nome'] .'<br></div>';
                 echo '<div class="form"><b>Pergunta:</b> ' .$row['pergunta'] .'<br></div>';
-                echo $imagem;
+                echo '<div class="form">' .$imagem .'<br></div>';
                 echo '<form method="post" >';    
                 echo        '<div class="form">';
                 echo            '<input type="hidden" id="id_formulario" name="id_formulario" value="'.$row['id_formulario']. '">';
@@ -84,37 +84,12 @@
                 $resultCheck = mysqli_num_rows($result);
                 if($resultCheck > 0) {
                     $row = mysqli_fetch_assoc($result);
-                    echo 'Resposta Certa!';
+                    echo '<div class="form">Resposta Certa!</div>';
                 } else {
-                echo 'Resposta Errada!';
+                echo '<div class="form">Resposta Errada!</div>';
                 }
             } 
         }
     ?>
-
-<button type="button" onclick="changeSizeByBtn(15)" name="btn1" style="position: fixed;
-    top: 50px; left: 83px;">
-            -A
-        </button>
-
-        <button type="button" onclick="changeSizeByBtn(20)" name="btn2" style="position: fixed;
-    top: 50px; left: 100px;">
-            A
-        </button>
-
-        <button type="button" onclick="changeSizeByBtn(25)" name="btn3" style="position: fixed;
-    top: 50px; left: 112px;">
-            A+
-        </button>
-        <br /><br />
-    <script>
-        var cont = document.getElementById("container");
-        
-        function changeSizeByBtn(size) {
-        
-            // Set value of the parameter as fontSize
-            cont.style.fontSize = size;
-        }
-    </script>
 </body>
 </html>

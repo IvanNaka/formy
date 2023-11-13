@@ -56,22 +56,10 @@
 
 .form{
     position: relative;
-    left: 50px;
+    left: 35%;
+    top: 50px;
+    font-size: 30px;
     align-items: center;
 
 }
 
-.btn1{
-    position: fixed;
-    bottom: 50px;
-}
-
-.btn2{
-    position: fixed;
-    bottom: 50px;
-}
-
-.btn3{
-    position: fixed;
-    bottom: 50px;
-}

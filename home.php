@@ -33,7 +33,7 @@
                                     echo "<a href=$redirect>Criar Formulario</a>";
                                 ?>
                             </li>
-                            <li>Sobre nós</li>
+                            <li><a href="index.html?usuario=2&formulario=1">Sobre nós</a></li>
                             <li>Contato</li>
                             <li>Suporte</li>
                         </ul>

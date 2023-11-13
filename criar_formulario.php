@@ -71,29 +71,7 @@
             </div>
         </div>
     </main>
-    <button type="button" onclick="changeSizeByBtn(15)" name="btn1" style="position: fixed;
-    top: 50px; left: 83px;">
-            -A
-            <script src="aumentar_fonte.js"></script>
 
-        </button>
-
-        <button type="button" onclick="changeSizeByBtn(20)" name="btn2" style="position: fixed;
-    top: 50px; left: 100px;">
-            A
-            <script src="aumentar_fonte.js"></script>
-
-        </button>
-
-        <button type="button" onclick="changeSizeByBtn(25)" name="btn3" style="position: fixed;
-    top: 50px; left: 112px;">
-            A+
-            <script src="aumentar_fonte.js"></script>
-
-        </button>
-        <br /><br />
-
-<script src="aumentar_fonte.js"></script>
 
 
 
